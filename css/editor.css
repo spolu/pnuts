@@ -25,6 +25,11 @@ html, body {
   display: block;
 }
 
+#empty {
+  font-style: italic;
+  color: #aaa;
+}
+
 #editable {
   margin-left: 2px;
   height: 100%;

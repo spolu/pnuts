@@ -19,7 +19,7 @@ const restore = () => {
   if (localStorage.getItem(state.currentKey)) {
     $('#editable').html(localStorage.getItem(state.currentKey))
   } else {
-    $('#editable').html('')
+    $('#editable').html('<div># Title</div>')
   }
   setTimeout(() => {
     $('#editable').get(0).focus()
@@ -43,7 +43,11 @@ const updateMenu = () => {
     firstResult = state.currentSearch;
   }
   state.firstResult = firstResult;
-  $('#results').html(results)
+  if (results.length > 0) {
+    $('#results').html(results)
+  } else {
+    $('#results').html('<span id="empty">empty</empty>')
+  }
 }
 
 // Updates the editable view.
