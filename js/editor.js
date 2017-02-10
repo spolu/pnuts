@@ -112,7 +112,6 @@ const update = () => {
     $('#editable').removeClass('visible')
     updateMenu();
   }
-  console.log(state);
 }
 
 $('#editable').on('input', event => {
