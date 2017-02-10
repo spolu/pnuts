@@ -1,0 +1,96 @@
+html, body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font: 12px/1 Menlo, "DejaVu Sans Mono", "Lucida Console", monospace;
+  color: #444;
+  margin: 0;
+  height: 100%;
+}
+
+#search {
+  width: 100%;
+  border: 0;
+  background-color: #eee;
+  margin-bottom: 10px;
+  line-height: 18px;
+}
+#search:focus {
+  outline: 0px solid transparent;
+}
+
+#menu {
+  display: none;
+}
+#menu.visible {
+  display: block;
+}
+
+#editable {
+  margin-left: 2px;
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+
+#editable.visible {
+  display: block;
+}
+
+#editable:focus {
+  outline: 0px solid transparent;
+}
+
+#editable div {
+  padding-top: 1px;
+}
+
+#editable div.h1 {
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+#editable div.h2 {
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+#editable div.h3 {
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+#editable div.h4 {
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+#editable div.b1 {
+  padding-left: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+#editable div.b2 {
+  padding-left: 20px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+#editable div.b3 {
+  padding-left: 30px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+#editable div.comment {
+  color: #aaa;
+}
+
+#editable div.code {
+  color: #eee;
+  background-color: #333;
+}
